@@ -95,9 +95,9 @@ $( document ).ready(function() {
 
 	   console.log(firstTrainTime);
 
-	   var hourDiff = nowTime.diff(firstTrainTime, "hours");
+	   //var hourDiff = nowTime.diff(firstTrainTime, "hours");
 
-	   console.log(hourDiff);
+	   //console.log(hourDiff);
 
 	   var nextArrival = 0;
 
