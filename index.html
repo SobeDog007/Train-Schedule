@@ -1,0 +1,123 @@
+<!-- Steven Sober
+     08/03/2017
+     Homework-08
+     index.html -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+   <head>
+
+      <meta charset="UTF-8">
+      <title>Train Schedule</title>
+
+      <!-- Javascript, JQuery, Firebase, and Moment.js script sources.  -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"</script>
+      <script type="text/javascript" src="logic.js"></script>
+
+		<!-- HTML, CSS, and Bootstrap sources. -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">i
+
+   </head>
+
+   <body>
+
+      <div id="main-container" class="container">
+
+			<div class="jumbotron">
+
+				<h1><b>Come On Ride The Train</b></h1>
+				<h3>Choo! Choo!</h3>
+
+			</div>
+
+         <div class="row">  <!-- Start: Row # 1 -->
+
+         	<div class="col-lg-12">  <!-- Start: Column # 1 -->
+
+					<!-- Current Train Schedule Panel -->
+					<div class="panel panel-default">
+
+				 		<div class="panel-heading">
+
+				 			<h2 class="panel-title">Current Train Schedule</h2>
+
+				 		</div>
+
+						<div class="panel-body">
+
+		  					<!-- Train Table -->
+		  					<table class="table" id="train-table">
+		    
+	    						<thead>
+	      						<tr>
+	       							<th>Train Name</th>
+	        							<th>Destination</th>
+	        							<th>Frequency (min)</th>
+	        							<th>Next Arrival</th>
+	        							<th>Minutes Away</th>
+	      						</tr>
+	    						</thead>
+
+	    						<tbody>
+	    						</tbody>
+
+		  					</table>
+
+						</div>
+	  				</div>
+	  			</div>  <!-- End: Column # 1 -->
+         </div>  <!-- End: Row # 1 -->
+
+         <div class="row">  <!-- Start: Row # 2 -->
+
+         	<div class="col-lg-12">  <!-- Start: Column # 1 -->
+
+					<div class="panel panel-default">
+
+		  				<div class="panel-heading">
+
+		    				<h2 class="panel-title">Add Train</h2>
+		  
+		  				</div>
+
+		  				<div class="panel-body">
+
+							<form>
+
+							  	<div class="form-group">
+							   	<label for="trainNameInput">Train Name</label>
+							    	<input type="trainName" class="form-control" id="train-name-input" placeholder="Train Name">
+							  	</div>
+
+							  	<div class="form-group">
+							   	<label for="destinationInput">Destination</label>
+							    	<input type="destination" class="form-control" id="destination-input" placeholder="Destination">
+							  	</div>
+
+								<div class="form-group">
+							   	<label for="firstTrainInput">First Train Time (HH:mm - military time)</label>
+							    	<input type="firstTrain" class="form-control" id="first-train-input" placeholder="First Train">
+							  	</div>
+
+								<div class="form-group">
+							   	<label for="frequencyInput">Frequency (min)</label>
+							    	<input type="frequency" class="form-control" id="frequency-input" placeholder="Frequency">
+							  	</div>
+
+							  	<button id="add-train" type="submit" class="btn btn-default">Submit</button>
+
+							</form>
+	  					</div>
+					</div>
+				</div>  <!-- End: Column # 1 -->
+         </div>  <!-- End: Row # 3 -->
+      </div>  <!-- End: container -->
+
+   </body>
+
+</html>

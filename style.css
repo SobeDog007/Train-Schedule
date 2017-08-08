@@ -1,0 +1,33 @@
+/* Steven Sober
+   08/03/2017
+   Homework-08
+   style.css */
+
+body {
+
+	background: url(base_background.jpg);
+	background-size: 100%;
+}
+
+.jumbotron {
+
+	font-family: "Saira", "Arial", sans-serif;
+	color: white;
+	background-color: red;
+	text-align: center;
+}
+
+.jumbotron:hover {
+
+	font-family: "Saira", "Arial", sans-serif;
+	color: green;
+	background-color: black;
+	text-align: center;
+}
+
+.panel-heading {
+
+	font-family: "Saira", "Arial", sans-serif;
+	color: purple;
+	background-color: orange !important; 
+}
